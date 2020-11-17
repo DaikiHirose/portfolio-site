@@ -9,12 +9,6 @@ body {
   background-attachment: fixed;
 }
 
-@media (max-width: 780px) {
-  body {
-    background-size: auto 100vh;
-  }
-}
-
 li {
   list-style-type: none;
 }

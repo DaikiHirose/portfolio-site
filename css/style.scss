@@ -9,10 +9,6 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
-    @media (max-width: 780px) {
-        background-size: auto 100vh;
-    }
 }
 
 li {
