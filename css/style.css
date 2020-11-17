@@ -11,8 +11,7 @@ body {
 
 @media (max-width: 780px) {
   body {
-    background-size: 100vw auto;
-    background-position: top;
+    background-size: auto 100vh;
   }
 }
 
