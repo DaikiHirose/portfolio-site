@@ -5,7 +5,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 255, 0.5)), to(rgba(0, 255, 255, 0.5))), url(../images/apple.jpg);
   background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 255, 255, 0.5)), url(../images/apple.jpg);
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -38,7 +38,7 @@ a {
   transition: .5s;
 }
 
-@media screen and (max-width: 780px) {
+@media (max-width: 780px) {
   .header {
     height: 4em;
   }
@@ -180,8 +180,8 @@ a {
 .spNavi {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .3s;
+  transition: .3s;
   position: fixed;
   top: 4em;
   z-index: 100;
@@ -201,7 +201,7 @@ a {
   font-size: 1.5em;
   text-align: right;
   padding-right: 1em;
-  line-height: 2;
+  line-height: 1.8;
 }
 
 .spNavi__item a {
@@ -313,7 +313,7 @@ a {
 .about {
   width: 100%;
   padding: 6em 0;
-  background-color: rgba(200, 200, 200, 0.8);
+  background-color: rgba(225, 225, 225, 0.8);
 }
 
 .about__title {
@@ -335,7 +335,7 @@ a {
 }
 
 .about__wrap {
-  width: clamp(50%, 80vh, 100%);
+  width: clamp(55%, 80vh, 100%);
   margin: 0 auto;
   padding: 1em;
   display: -ms-grid;
@@ -395,6 +395,7 @@ a {
 .about__text {
   width: 100%;
   font-size: 1.2em;
+  font-family: 'Noto Serif JP', serif;
   padding: .5em;
   letter-spacing: .1em;
   line-height: 1.5em;
@@ -437,7 +438,7 @@ a {
 }
 
 .skills__grid {
-  width: clamp(50%, 80vh, 100%);
+  width: clamp(55%, 80vh, 100%);
   margin: 0 auto;
   padding: 1em;
   display: -ms-grid;
@@ -471,6 +472,19 @@ a {
   font-size: 5em;
   max-width: 100%;
   padding: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills__content {
+  max-width: 250px;
 }
 
 @media (max-width: 780px) {
@@ -487,10 +501,12 @@ a {
 
 .skills__text {
   font-size: 1.2em;
+  font-family: 'Noto Serif JP', serif;
   padding: .5em;
   letter-spacing: .1em;
   line-height: 1.5em;
   text-align: justify;
+  word-break: break-all;
 }
 
 @media (max-width: 780px) {
@@ -505,7 +521,7 @@ a {
   height: 100vh;
   margin: 0 auto;
   padding: 6em;
-  background-color: rgba(200, 200, 200, 0.8);
+  background-color: rgba(225, 225, 225, 0.8);
 }
 
 .portfolio__title {
@@ -526,11 +542,37 @@ a {
   background: #0097A7;
 }
 
+.value {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 6em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.value__title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.value__title:before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: -10px;
+  width: 60px;
+  height: 3px;
+  border-radius: 3px;
+  background: #0097A7;
+}
+
 .contact {
   width: 100%;
   margin: 0 auto;
   padding: 6em 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(225, 225, 225, 0.8);
 }
 
 .contact__title {
