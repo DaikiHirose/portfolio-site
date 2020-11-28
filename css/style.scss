@@ -5,10 +5,12 @@ body {
     color: #444;
     font-family: 'Roboto', sans-serif;
     font-family: 'Slabo 27px', serif;
-    background-image: linear-gradient(rgba(#e6dada, .5), rgba(#274046, .5)), url(../images/apple.jpg);
+    background-image: radial-gradient(rgba(#e6dada, .5), rgba(#274046, .5)), url(../images/apple.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+
 }
 
 li {
@@ -37,7 +39,7 @@ a {
     width: 60px;
     height: 3px;
     border-radius: 3px;
-    background: #0097A7;
+    background-color: #0097a7;
 }
 
 // スマホ版ナビのリスト表示
@@ -62,7 +64,7 @@ a {
 
     &__title {
         font-size: 2em;
-        color: #eee;
+        color: #444;
         margin-left: 1.5em;
         letter-spacing: .1em;
 
@@ -78,6 +80,7 @@ a {
 
     &.scroll {
         background-color: rgba(#444, .9);
+        // color: #eee;
     }
 }
 
@@ -244,7 +247,7 @@ a {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: #eee;
+        color: #e8822a;
         font-size: 3em;
     }
 
@@ -414,8 +417,6 @@ a {
             font-size: 1em;
         }
     }
-
-
 }
 
 .skills {
@@ -559,6 +560,12 @@ a {
         font-size: 2em;
         text-align: center;
         padding-bottom: 1em;
+
+        span {
+            font-size: 1.5em;
+            color: #e8822a;
+            text-shadow: 1px 1px .5px #444;
+        }
 
         @media (max-width: 768px) {
             font-size: 1.5em;

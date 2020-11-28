@@ -2,9 +2,9 @@ body {
   color: #444;
   font-family: 'Roboto', sans-serif;
   font-family: 'Slabo 27px', serif;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(230, 218, 218, 0.5)), to(rgba(39, 64, 70, 0.5))), url(../images/apple.jpg);
-  background-image: linear-gradient(rgba(230, 218, 218, 0.5), rgba(39, 64, 70, 0.5)), url(../images/apple.jpg);
+  background-image: radial-gradient(rgba(230, 218, 218, 0.5), rgba(39, 64, 70, 0.5)), url(../images/apple.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
@@ -46,7 +46,7 @@ a {
 
 .header__title {
   font-size: 2em;
-  color: #eee;
+  color: #444;
   margin-left: 1.5em;
   letter-spacing: .1em;
 }
@@ -236,7 +236,7 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: #eee;
+  color: #e8822a;
   font-size: 3em;
 }
 
@@ -331,7 +331,7 @@ a {
   width: 60px;
   height: 3px;
   border-radius: 3px;
-  background: #0097A7;
+  background-color: #0097a7;
 }
 
 .about__wrap {
@@ -470,7 +470,7 @@ a {
   width: 60px;
   height: 3px;
   border-radius: 3px;
-  background: #0097A7;
+  background-color: #0097a7;
 }
 
 .skills__grid {
@@ -575,7 +575,7 @@ a {
   width: 60px;
   height: 3px;
   border-radius: 3px;
-  background: #0097A7;
+  background-color: #0097a7;
 }
 
 .value {
@@ -599,7 +599,7 @@ a {
   width: 60px;
   height: 3px;
   border-radius: 3px;
-  background: #0097A7;
+  background-color: #0097a7;
 }
 
 .value__wrap {
@@ -646,6 +646,12 @@ a {
   padding-bottom: 1em;
 }
 
+.value__subTitle span {
+  font-size: 1.5em;
+  color: #e8822a;
+  text-shadow: 1px 1px .5px #444;
+}
+
 @media (max-width: 768px) {
   .value__subTitle {
     font-size: 1.5em;
@@ -674,7 +680,7 @@ a {
   width: 60px;
   height: 3px;
   border-radius: 3px;
-  background: #0097A7;
+  background-color: #0097a7;
 }
 
 .contact__form {
