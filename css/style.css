@@ -220,19 +220,8 @@ a {
 }
 
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
   background: radial-gradient(rgba(204, 204, 204, 0.5), rgba(207, 181, 181, 0.1)), url(../images/apple.jpg);
   background-size: cover;
   background-attachment: fixed;
