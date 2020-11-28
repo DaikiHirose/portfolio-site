@@ -229,6 +229,10 @@ a {
 }
 
 .top {
+  background-image: radial-gradient(rgba(204, 204, 204, 0.5), rgba(207, 181, 181, 0.1)), url(../images/apple.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
   width: 100%;
   min-height: 100vh;
   position: relative;
