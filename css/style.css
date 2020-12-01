@@ -26,6 +26,51 @@ a {
   text-decoration: none;
 }
 
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+}
+
+.fade-in-up {
+  -webkit-transform: translate(0, 50px);
+          transform: translate(0, 50px);
+}
+
+.scroll-in {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -301,30 +346,6 @@ a {
           animation-delay: .3s;
 }
 
-@-webkit-keyframes arrow {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes arrow {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .about {
   width: 100%;
   padding: 6em 0;
@@ -377,6 +398,8 @@ a {
   padding-top: 5em;
   margin-bottom: 2em;
   text-align: center;
+  -webkit-animation: fadeIn 0.2s ease 0.3s 1 normal;
+          animation: fadeIn 0.2s ease 0.3s 1 normal;
 }
 
 @media (max-width: 768px) {
