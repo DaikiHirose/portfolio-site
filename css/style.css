@@ -249,6 +249,12 @@ a {
   font-size: 5em;
 }
 
+@media (max-width: 768px) {
+  .top__title {
+    font-size: 3em;
+  }
+}
+
 .top__scroll {
   -webkit-transition: .5s;
   transition: .5s;
