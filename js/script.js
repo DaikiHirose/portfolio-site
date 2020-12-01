@@ -1,41 +1,48 @@
 'use strict';
 
-// ハンバーガーメニューの開閉設定
-document.getElementById('menuButton').addEventListener('click', function (evt) {
+const menu = document.getElementById('menuButton');
+const navi = document.getElementById('spNavi');
+const mask = document.getElementById('mask');
+const header = document.getElementById('header');
+const btn = document.getElementById('js-button');
+
+
+// スマートフォン版：ハンバーガーメニューの開閉設定
+menu.addEventListener('click', function (evt) {
     evt.preventDefault();
     this.classList.toggle('active');
-    document.getElementById('spNavi').classList.toggle('active');
-    document.getElementById('mask').classList.toggle('active');
+    navi.classList.toggle('active');
+    mask.classList.toggle('active');
 });
 
-// スマートフォン版メニュー領域以外の設定
-document.getElementById('mask').addEventListener('click', function (evt) {
+// スマートフォン版：メニュー領域以外をクリックした時の設定
+mask.addEventListener('click', function (evt) {
     evt.preventDefault();
     this.classList.remove('active');
-    document.getElementById('spNavi').classList.remove('active');
-    document.getElementById('menuButton').classList.remove('active');
+    navi.classList.remove('active');
+    menu.classList.remove('active');
 });
 
-// スマートフォンメニュークリック時の設定
-document.getElementById('spNavi').addEventListener('click', function (evt) {
+// スマートフォン版：メニュークリック時の設定
+navi.addEventListener('click', function (evt) {
   evt.preventDefault();
   this.classList.remove('active');
-  document.getElementById('mask').classList.remove('active');
-  document.getElementById('menuButton').classList.remove('active');
+  mask.classList.remove('active');
+  menu.classList.remove('active');
 });
 
 
-// 画面スクロール時のheadarの設定
+// 画面スクロール時のheadarの表示設定
 window.addEventListener('scroll', function (evt) {
     evt.preventDefault();
     if (window.scrollY <= 50) {
-        document.getElementById('header').classList.remove('scroll');
-        document.getElementById('spNavi').classList.remove('scroll');
-        document.getElementById('js-button').classList.remove('active');
+        header.classList.remove('scroll');
+        navi.classList.remove('scroll');
+        btn.classList.remove('active');
     } else {
-        document.getElementById('header').classList.add('scroll');
-        document.getElementById('spNavi').classList.add('scroll');
-        document.getElementById('js-button').classList.add('active');
+        header.classList.add('scroll');
+        navi.classList.add('scroll');
+        btn.classList.add('active');
     }
 });
 
@@ -56,8 +63,8 @@ links.forEach((link) => {
   });
 });
 
-// スクロールトップボタン
-scrollTop('js-button', 500);
+// スクロール時トップへ戻るボタンの設定
+scrollTop('js-button', 300);
 
 function scrollTop(elem,duration) {
   let target = document.getElementById(elem);
