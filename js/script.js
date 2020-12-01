@@ -63,7 +63,7 @@ links.forEach((link) => {
   });
 });
 
-// スクロール時トップへ戻るボタンの設定
+// スクロール時トップへ戻るボタンの表示
 scrollTop('js-button', 300);
 
 function scrollTop(elem,duration) {
@@ -84,3 +84,17 @@ function scrollTop(elem,duration) {
     }
   });
 }
+
+// スクロール時要素を下から表示
+let fadeInTarget = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  for (let i = 0; i < fadeInTarget.length; i++){
+    const rect = fadeInTarget[i].getBoundingClientRect().top;
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
+    const offset = rect + scroll;
+    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
+    if (scroll > offset - windowHeight + 150) {
+      fadeInTarget[i].classList.add('scroll-in');
+    }
+  }
+});
