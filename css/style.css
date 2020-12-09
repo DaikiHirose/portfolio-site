@@ -13,7 +13,7 @@ body:before {
   z-index: -1;
   width: 100%;
   height: 100vh;
-  background: radial-gradient(rgba(204, 204, 204, 0.5), rgba(207, 181, 181, 0.1)), url(../images/apple.jpg);
+  background: radial-gradient(rgba(102, 102, 102, 0.5), rgba(102, 102, 102, 0.5)), url(../images/apple.jpg);
   background-size: cover;
 }
 
@@ -289,8 +289,8 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: #e8822a;
-  text-shadow: 5px 5px 5px #555;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 1px #180b01;
   font-size: 5em;
 }
 
@@ -349,7 +349,7 @@ a {
 .about {
   width: 100%;
   padding: 6em 0;
-  background-color: rgba(225, 225, 225, 0.8);
+  background-color: #f2f5f8;
 }
 
 .about__title {
@@ -544,7 +544,7 @@ a {
 .skills__item {
   padding: 1em;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   display: -webkit-box;
@@ -607,7 +607,7 @@ a {
   height: 100vh;
   margin: 0 auto;
   padding: 6em;
-  background-color: rgba(225, 225, 225, 0.9);
+  background-color: #f2f5f8;
 }
 
 .portfolio__title {
@@ -673,7 +673,7 @@ a {
 .value__content {
   padding: 2em;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
@@ -724,7 +724,7 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 6em 0;
-  background-color: rgba(225, 225, 225, 0.8);
+  background-color: #f2f5f8;
 }
 
 .contact__title {
