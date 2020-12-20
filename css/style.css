@@ -739,7 +739,7 @@ a {
   text-align: center;
 }
 
-.works__item:hover .portfolio__mask {
+.works__item:hover .works__mask {
   opacity: 1;
 }
 
