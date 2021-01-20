@@ -346,6 +346,16 @@ a {
   color: #e8822a;
 }
 
+.top__title img {
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .top__title img {
+    width: 50%;
+  }
+}
+
 .top__scroll {
   -webkit-transition: .5s;
   transition: .5s;
