@@ -6,7 +6,6 @@ const mask = document.getElementById('mask');
 const header = document.getElementById('header');
 const btn = document.getElementById('js-button');
 
-
 // スマートフォン版：ハンバーガーメニューの開閉設定
 menu.addEventListener('click', function (evt) {
     evt.preventDefault();
@@ -30,7 +29,6 @@ navi.addEventListener('click', function (evt) {
   mask.classList.remove('active');
   menu.classList.remove('active');
 });
-
 
 // 画面スクロール時のheadarの表示設定
 window.addEventListener('scroll', function (evt) {
