@@ -18,8 +18,8 @@ body:before {
   height: 100vh;
   background: radial-gradient(rgba(0, 4, 40, 0.5), rgba(1, 18, 34, 0.5)), url(../images/apple.jpg);
   background-size: cover;
-  -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
-          animation: fadeIn 1.5s ease 0s 1 normal;
+  -webkit-animation: fadeIn 4s ease 0s 1 normal;
+          animation: fadeIn 4s ease 0s 1 normal;
 }
 
 @-webkit-keyframes fadeIn {
